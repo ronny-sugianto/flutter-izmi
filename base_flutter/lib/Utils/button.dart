@@ -17,18 +17,21 @@ class Tombol extends StatelessWidget {
       this.textType});
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      onPressed: callback,
-      color: color ?? Color(0xFF168afd),
-      elevation: shadow ?? 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(18),
-      ),
-      child: Text(
-        title,
-        style: TextStyle(
-          color: textColor ?? Colors.white,
-          fontWeight: textType ?? FontWeight.normal,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: RaisedButton(
+        onPressed: callback,
+        color: color ?? Color(0xFF168afd),
+        elevation: shadow ?? 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18),
+        ),
+        child: Text(
+          title,
+          style: TextStyle(
+            color: textColor ?? Colors.white,
+            fontWeight: textType ?? FontWeight.normal,
+          ),
         ),
       ),
     );
