@@ -19,7 +19,7 @@ class Tombol extends StatelessWidget {
   Widget build(BuildContext context) {
     return RaisedButton(
       onPressed: callback,
-      color: color ?? Colors.blueGrey,
+      color: color ?? Color(0xFF168afd),
       elevation: shadow ?? 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(18),
